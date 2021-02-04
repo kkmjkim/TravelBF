@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--res-auto: to convert it to bottom sheet?-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="50dp"
+    android:background="#FFFFFF"
+    android:id="@+id/bottomsheet_custom"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textView_address"
+            android:text="장소를 선택하세요"
+            android:layout_width="300dp"
+            android:textSize="30dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/button_tel"
+            android:text="0212345678"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_address"/>
+        <ImageButton
+            android:id="@+id/ib_star1"
+            android:src="@drawable/star_button_states"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:clickable="true"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <!--유나 -> 여기에 id넣어주기-->
+    <Button
+        android:id="@+id/show_review"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_gravity="right"
+        android:text="리뷰 보기" />
+
+    <!--리사이클러뷰-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00FF00" >
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sample info sample info sample info sample info sample info sampl
+            e info sample info sample info sample info sample info sample info
+            sample info sample info sample info sample info sample info sample info "
+            android:textSize="20dp" />
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--위에 버튼 3, 장소유형 버튼 4, map1-->
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/bar" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+            <Button
+                android:id="@+id/btn_tour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="관광지"
+                android:layout_alignParentLeft="true"/>
+            <Button
+                android:id="@+id/btn_restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="음식점"
+                android:layout_toRightOf="@id/btn_tour"/>
+            <Button
+                android:id="@+id/btn_accomodation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="숙박"
+                android:layout_toRightOf="@id/btn_restaurant"/>
+            <Button
+                android:id="@+id/btn_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="쇼핑"
+                android:layout_toRightOf="@id/btn_accomodation"/>
+            <ImageButton
+                android:id="@+id/ib_list"
+                android:src="@drawable/list_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <fragment
+            android:id="@+id/main_map"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"/>
+
+
+    </LinearLayout>
+    <include layout="@layout/bottomsheet_custom" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

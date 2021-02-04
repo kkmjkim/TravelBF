@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faq">
+
+
+    <ImageButton
+        android:id="@+id/backicon"
+        android:layout_width="64dp"
+        android:layout_height="73dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/back"
+        android:layout_marginLeft="10dp"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/backicon"
+        android:text="FAQ"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/backicon"
+        android:layout_marginTop="100dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:lineSpacingExtra="7dp"
+        android:text="20/10/16 \n Q1"
+        android:textSize="20sp"
+        android:background="@drawable/edge"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/button0"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:lineSpacingExtra="7dp"
+        android:text="20/09/14 \n Q2"
+        android:background="@drawable/edge"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/button1"
+        android:icon="@+id/button2"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:lineSpacingExtra="7dp"
+        android:text="20/09/02 \n Q3"
+        android:background="@drawable/edge"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/button2"
+        android:icon="@+id/button2"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:lineSpacingExtra="7dp"
+        android:text="20/07/29 \n Q4"
+        android:background="@drawable/edge"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/button3"
+        android:icon="@+id/button2"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:lineSpacingExtra="7dp"
+        android:text="20/06/24 \n Q5"
+        android:background="@drawable/edge"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

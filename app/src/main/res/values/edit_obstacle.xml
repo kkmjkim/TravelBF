@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="edit_array">
+        <item>시각 장애</item>
+        <item>청각 장애</item>
+        <item>지체 장애</item>
+        <item>장애 없음</item>
+    </string-array>
+</resources>

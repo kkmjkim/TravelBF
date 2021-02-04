@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/ib_writeReview"
+        android:layout_width="52dp"
+        android:layout_height="31dp"
+        android:layout_alignParentRight="true"
+        android:background="#FFFFFF"
+        android:src="@drawable/edit_icon" />
+
+    <!--리사이클러뷰-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/review_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ib_writeReview"/>
+
+</RelativeLayout>

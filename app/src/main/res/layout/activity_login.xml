@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--    <include-->
+    <!--        layout="@layout/activity_tool_bar_test"-->
+    <!--        />-->
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="여행 베프"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_below="@id/appName"
+        android:layout_marginTop="100dp"
+        android:text="ID"
+        android:textSize="20sp" />
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/login"
+        android:layout_marginLeft = "40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignBaseline="@id/login"
+        android:layout_width="match_parent"
+        android:hint="아이디"
+        android:inputType="text"
+        android:id="@+id/inputID"/>
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/login"
+        android:text="PW"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/inputPW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/password"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="40dp"
+        android:layout_toRightOf="@id/password"
+        android:hint="비밀번호"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/findId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignBaseline="@id/signUp"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="-11dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toLeftOf="@id/findPW"
+        android:background="#00ff0000"
+        android:text="아이디 찾기"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/findPW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignBaseline="@id/signUp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="-15dp"
+        android:layout_marginBottom="50dp"
+        android:layout_toLeftOf="@id/signUp"
+        android:background="#00ff0000"
+        android:text="비밀번호 찾기"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginBottom="50dp"
+        android:background="#00ff0000"
+        android:text="회원가입"
+        android:textSize="13sp" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id = "@+id/btn_google"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="103dp"
+        android:layout_centerInParent="true"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">여행 베프</string>
+    <string name="facebook_app_id">1158024271266242</string>
+    <string name="fb_login_protocol_scheme">fb1158024271266242</string>
+    <string name="myAppName">"여행 베프"</string>
+    <string name="textview_message" formatted="false">%1$4s %2$15s \n</string>
+
+</resources>

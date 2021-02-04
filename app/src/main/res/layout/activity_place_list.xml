@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--제일 위에 메뉴, 현재 경로 보기, 검색 버튼-->
+
+        <TextView
+            android:id = "@+id/bt_showdata"
+            android:layout_width="59dp"
+            android:layout_height="33dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp" >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="menu"
+                android:textSize="10dp"
+                android:layout_alignParentLeft="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="route"
+                android:textSize="10dp"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="search"
+                android:textSize="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+            <Button
+                android:id="@+id/btn_tour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="관광지"
+                android:layout_alignParentLeft="true"/>
+            <Button
+                android:id="@+id/btn_restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="음식점"
+                android:layout_toRightOf="@id/btn_tour"/>
+            <Button
+                android:id="@+id/btn_accomodation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="숙박"
+                android:layout_toRightOf="@id/btn_restaurant"/>
+            <Button
+                android:id="@+id/btn_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="쇼핑"
+                android:layout_toRightOf="@id/btn_accomodation"/>
+            <ImageButton
+                android:src="@drawable/map_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <Button
+                android:id="@+id/sort_by_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="추천순"
+                android:layout_alignParentRight="true"/>
+            <Button
+                android:id="@+id/sort_by_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="거리순"
+                android:layout_toLeftOf="@id/sort_by_rate"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/place_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

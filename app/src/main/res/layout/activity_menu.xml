@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+
+
+    <ImageButton
+        android:id="@+id/backicon"
+        android:layout_width="64dp"
+        android:layout_height="73dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/back"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/user_obstacle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/userid"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="30dp"
+
+        android:textSize="13sp" />
+
+
+
+    <Button
+        android:id="@+id/obstalce_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/backicon"
+        android:layout_marginTop="100dp"
+        android:text="장애정보 등록"
+        android:textSize="20sp"
+        android:background="@drawable/edge"
+        android:drawableRight="@drawable/next_icon_customize"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/obstalce_button"
+        android:text="내 여행 기록 보기"
+        android:background="@drawable/edge"
+        android:drawableRight="@drawable/next_icon_customize"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/faq"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/button1"
+        android:icon="@+id/button2"
+        android:text="FAQ"
+        android:background="@drawable/edge"
+        android:drawableRight="@drawable/next_icon_customize"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/logout_button_radius"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="50dp"
+        android:text="로그아웃"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
